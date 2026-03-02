@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive issue</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .top-bar { background-color: #1b8415; color: white; padding: 10px 0; }
+        .header-banner-wrapper {
+            text-align: center;
+            padding: 30px 0;
+            background-image: url('front.png'); 
+            background-size: cover; 
+            background-position: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .header-banner-wrapper h1 { color: #0000ff; margin: 10px 0; font-size: 2.2rem; }
+        .row-three {
+            background: radial-gradient(rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            padding: 12px 0;
+            text-align: center;
+        }
+        nav a { color: white; text-decoration: none; font-weight: bold; margin: 0 10px; font-size: 14px; }
+
+        /* Archive Layout */
+        .archive-grid {
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+
+        .archive-section {
+            background: #fff;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid #1b8415;
+        }
+
+        .year-heading {
+            background: #f1f1f1;
+            padding: 10px 15px;
+            border-left: 5px solid #0000ff;
+            font-weight: bold;
+            font-size: 22px;
+            margin: 30px 0 20px 0;
+            color: #333;
+        }
+
+        .year-heading:first-child { margin-top: 0; }
+
+        /* Issue Item Style */
+        .issue-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid #eee;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            transition: 0.3s;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .issue-item:hover {
+            background-color: #f9f9f9;
+            border-color: #1b8415;
+        }
+
+        .issue-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            color: #1b8415;
+        }
+
+        .issue-info { font-weight: bold; font-size: 16px; flex-grow: 1; }
+        .issue-date { color: #777; font-size: 14px; }
+
+        .view-btn {
+            background-color: #0000ff;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 4px;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        /* Sidebar Widgets */
+        .sidebar-widget {
+            background: #fff;
+            border: 1px solid #e1e8ed;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .call-title { color: #ff0000; font-size: 24px; font-weight: bold; }
+        .call-month { color: #0000ff; font-size: 22px; font-weight: bold; }
+        .author-desk-title {
+            text-align: left;
+            font-size: 22px;
+            font-weight: bold;
+            border-bottom: 4px solid #1b8415;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .sidebar-list { text-align: left; list-style: none; padding: 0; }
+        .sidebar-list li { 
+            padding: 12px 0; 
+            border-bottom: 1px solid #eee; 
+            font-weight: bold;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar-list li::before { content: '▶'; color: #1b8415; font-size: 10px; margin-right: 12px; }
+
+        marquee { background: #f1f1f1; padding: 10px 0; font-weight: bold; display: block; }
+
+        @media (max-width: 900px) { .archive-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <div>Email us: fcns.journal@gcwuf.edu.pk</div>
+                <nav>
+                    <ul>
+                        <li><a href="about.html" style="color: white;">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header-banner">
+            <div class="container">
+                <img src="uni.png" alt="GCWUF" height="150px" align="left">
+                <img src="journal.png" alt="Journal FCNS" height="250px">
+                <img src="logo.png" alt="Logo" height="150px" align="right" >
+                <h1>Journal of Computing and Numerical Sciences</h1>
+                <p>An National Peer-Reviewed & Refereed Biannual Journal</p>
+                <h3>ISSN: <span style="color: #339966;">0000-1111</span></h3>
+            </div>
+        </div>
+
+        <div class="row-three">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="editorial.html">Editorial Board</a></li>
+                        <li><a href="papersubmission.html">Online Paper Submission</a></li>
+                        <li><a href="currentissue.html">Current Issue</a></li>
+                        <li><a href="archive.html">Archive Issues</a></li>
+                        <li><a href="publication.html">Publication Fees (APC)</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <marquee>
+            Call For Paper - Volume - 3 Issue - 1 (January - March 2026)
+        </marquee>
+    </header>
+
+    <main class="content-container">
+        <div class="archive-grid">
+            
+            <section class="archive-section">
+                <h2 style="margin-top:0;">Past Volumes & Issues</h2>
+                <p style="color:#666; margin-bottom:30px;">Access all previously published research articles and review papers from our archives.</p>
+
+                <div class="year-heading">Year - 2025</div>
+                
+                <a href="#" class="issue-item">
+                    <span class="issue-icon">📁</span>
+                    <div class="issue-info">Volume 2 Issue 4 <span class="issue-date">(October - December)</span></div>
+                    <span class="view-btn">View Issue</span>
+                </a>
+                <a href="#" class="issue-item">
+                    <span class="issue-icon">📁</span>
+                    <div class="issue-info">Volume 2 Issue 3 <span class="issue-date">(July - September)</span></div>
+                    <span class="view-btn">View Issue</span>
+                </a>
+                <a href="#" class="issue-item">
+                    <span class="issue-icon">📁</span>
+                    <div class="issue-info">Volume 2 Issue 2 <span class="issue-date">(April - June)</span></div>
+                    <span class="view-btn">View Issue</span>
+                </a>
+                <a href="#" class="issue-item">
+                    <span class="issue-icon">📁</span>
+                    <div class="issue-info">Volume 2 Issue 1 <span class="issue-date">(January - March)</span></div>
+                    <span class="view-btn">View Issue</span>
+                </a>
+
+                <div class="year-heading">Year - 2024</div>
+                
+                <a href="#" class="issue-item">
+                    <span class="issue-icon">📁</span>
+                    <div class="issue-info">Volume 1 Issue 4 <span class="issue-date">(October - December)</span></div>
+                    <span class="view-btn">View Issue</span>
+                </a>
+                <a href="#" class="issue-item">
+                    <span class="issue-icon">📁</span>
+                    <div class="issue-info">Volume 1 Issue 3 <span class="issue-date">(July - September)</span></div>
+                    <span class="view-btn">View Issue</span>
+                </a>
+                <a href="#" class="issue-item">
+                    <span class="issue-icon">📁</span>
+                    <div class="issue-info">Volume 1 Issue 2 <span class="issue-date">(April - June)</span></div>
+                    <span class="view-btn">View Issue</span>
+                </a>
+                <a href="#" class="issue-item">
+                    <span class="issue-icon">📁</span>
+                    <div class="issue-info">Volume 1 Issue 1 <span class="issue-date">(January - March)</span></div>
+                    <span class="view-btn">View Issue</span>
+                </a>
+            </section>
+
+            <aside>
+                <div class="sidebar-widget">
+                    <div class="call-title">Call for Articles</div>
+                    <div class="call-month">March - 2026</div>
+                    <p>Submission Last Date<br><strong style="color:#0000ff;">30/03/2026</strong></p>
+                </div>
+
+                <div class="sidebar-widget" style="text-align: left;">
+                    <div class="author-desk-title">Author's Desk</div>
+                    <ul class="sidebar-list">
+                        <li>AIM & SCOPE</li>
+                        <li>AUTHOR GUIDELINES</li>
+                        <li>JOIN AS REVIEWER</li>
+                        <li>PEER REVIEW PROCESS</li>
+                        <li>PUBLICATION ETHICS</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Copyright Form</a></li>
+                    <li><a href="#">Check Paper Status</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Government College Women University Faisalabad,</p>
+                <p>Email: fcns.journal@gcwuf.edu.pk</p>
+            </div>
+        </div>
+        <div class="container" align="center" >
+      <div class="copyright">
+        Designed by <strong><span>Fayqa Manan</span></strong>.
+      </div>
+
+    </div>
+    </footer>
+</body>
+</html>

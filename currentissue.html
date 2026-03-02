@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Issue</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Section (Consistent with your site) */
+        .top-bar { background-color: #1b8415; color: white; padding: 10px 0; }
+        .header-banner-wrapper {
+            text-align: center;
+            padding: 30px 0;
+            background-image: url('front.png'); 
+            background-size: cover; 
+            background-position: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .header-banner-wrapper h1 { color: #0000ff; margin: 10px 0; font-size: 2.2rem; }
+
+        .row-three {
+            background: radial-gradient(rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            padding: 12px 0;
+            text-align: center;
+        }
+        nav a { color: white; text-decoration: none; font-weight: bold; margin: 0 10px; font-size: 14px; }
+
+        /* Current Issue Layout */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 2.5fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+
+        .volume-header {
+            background: #fff;
+            padding: 15px;
+            border-left: 5px solid #1b8415;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Article Card (IJST Inspired) */
+        .article-card {
+            background: #fff;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #eee;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            position: relative;
+        }
+
+        .article-title {
+            color: #0000ff;
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            display: block;
+            text-decoration: none;
+        }
+
+        .article-meta {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .meta-label { font-weight: bold; color: #333; }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #1b8415;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        .download-btn:hover { background-color: #146610; }
+
+        /* Sidebar Widgets */
+        .sidebar-widget {
+            background: #fff;
+            border: 1px solid #e1e8ed;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .call-title { color: #ff0000; font-size: 24px; font-weight: bold; }
+        .call-month { color: #0000ff; font-size: 22px; font-weight: bold; }
+        .author-desk-title {
+            text-align: left;
+            font-size: 22px;
+            font-weight: bold;
+            border-bottom: 4px solid #1b8415;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .sidebar-list { text-align: left; list-style: none; padding: 0; }
+        .sidebar-list li { 
+            padding: 10px 0; 
+            border-bottom: 1px solid #eee; 
+            font-weight: bold;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar-list li::before { content: '▶'; color: #1b8415; font-size: 10px; margin-right: 12px; }
+
+        marquee { background: #f1f1f1; padding: 10px 0; font-weight: bold; }
+
+        @media (max-width: 900px) { .main-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container top-bar-content">
+                <div>Email us: fcns.journal@gcwuf.edu.pk</div>
+                <nav>
+                    <ul>
+                        <li><a href="about.html" style="color: white;">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header-banner">
+            <div class="container">
+                <img src="uni.png" alt="GCWUF" height="150px" align="left">
+                <img src="journal.png" alt="Journal FCNS" height="250px">
+                <img src="logo.png" alt="Logo" height="150px" align="right" >
+                <h1>Journal of Computing and Numerical Sciences</h1>
+                <p>An National Peer-Reviewed & Refereed Biannual Journal</p>
+                <h3>ISSN: <span style="color: #339966;">0000-1111</span></h3>
+            </div>
+        </div>
+
+        <div class="row-three">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="editorial.html">Editorial Board</a></li>
+                        <li><a href="papersubmission.html">Online Paper Submission</a></li>
+                        <li><a href="currentissue.html">Current Issue</a></li>
+                        <li><a href="archive.html">Archive Issues</a></li>
+                        <li><a href="publication.html">Publication Fees (APC)</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <marquee>
+            Call For Paper - Volume - 3 Issue - 1 (January - March 2026)
+        </marquee>
+    </header>
+<main class="content-container">
+        <div class="main-grid">
+            
+            <section>
+                <div class="volume-header">
+                    Current Issue - Volume: 3 Issue: 1 (January - March 2026)
+                </div>
+
+                <div class="article-card">
+                    <a href="#" class="article-title">Preparation and Evaluation of Fig Fruit Based Cup Cake</a>
+                    <div class="article-meta">
+                        <span class="meta-label">Author(s):</span> Sushmitha U, Anarghya R, Sahana B R, Ananya C.<br>
+                        <span class="meta-label">Research Area:</span> Agricultural Engineering<br>
+                        <span class="meta-label">Page No:</span> 01-09 | <span class="meta-label">DOI:</span> 10.70558/JCNS.2026.v3.i1.01
+                    </div>
+                    <a href="article1.pdf" class="download-btn">Download PDF</a>
+                </div>
+
+                <div class="article-card">
+                    <a href="#" class="article-title">Design and Analysis of Secure IP Networking Using RIP, NAT, and VPN</a>
+                    <div class="article-meta">
+                        <span class="meta-label">Author(s):</span> Dr. Dinakaran S, Mr. Ashok Raj R, Dr. Saravanan P.<br>
+                        <span class="meta-label">Research Area:</span> Computer Science<br>
+                        <span class="meta-label">Page No:</span> 10-22 | <span class="meta-label">DOI:</span> 10.70558/JCNS.2026.v3.i1.02
+                    </div>
+                    <a href="article2.pdf" class="download-btn">Download PDF</a>
+                </div>
+
+                <div class="article-card">
+                    <a href="#" class="article-title">Comparative Study for Removal of Chromium and Copper from Aqueous Solution</a>
+                    <div class="article-meta">
+                        <span class="meta-label">Author(s):</span> Koppolu Karthik, P. Akhila Swathanthra.<br>
+                        <span class="meta-label">Research Area:</span> Chemical Engineering<br>
+                        <span class="meta-label">Page No:</span> 23-35 | <span class="meta-label">DOI:</span> 10.70558/JCNS.2026.v3.i1.03
+                    </div>
+                    <a href="article3.pdf" class="download-btn">Download PDF</a>
+                </div>
+
+                <div class="article-card">
+                    <a href="#" class="article-title">Spatio-Temporal Assessment of Urban Heat Stress Using UHHIM Model</a>
+                    <div class="article-meta">
+                        <span class="meta-label">Author(s):</span> Mrs. S. Muthunagai, Mrs. S. Kalpana, Mrs. P. Suriya.<br>
+                        <span class="meta-label">Research Area:</span> Environmental Science<br>
+                        <span class="meta-label">Page No:</span> 36-48 | <span class="meta-label">DOI:</span> 10.70558/JCNS.2026.v3.i1.04
+                    </div>
+                    <a href="article4.pdf" class="download-btn">Download PDF</a>
+                </div>
+
+                <div class="article-card">
+                    <a href="#" class="article-title">Geospatial Analysis of the Tourism Carrying Capacity of Urban Shorelines</a>
+                    <div class="article-meta">
+                        <span class="meta-label">Author(s):</span> T. Vasantha Kumaran, S. Ambrisha.<br>
+                        <span class="meta-label">Research Area:</span> Population Studies<br>
+                        <span class="meta-label">Page No:</span> 49-61 | <span class="meta-label">DOI:</span> 10.70558/JCNS.2026.v3.i1.05
+                    </div>
+                    <a href="article5.pdf" class="download-btn">Download PDF</a>
+                </div>
+
+                <div class="article-card">
+                    <a href="#" class="article-title">Effect of Foot Core Strengthening on Landing Biomechanics in Female Players</a>
+                    <div class="article-meta">
+                        <span class="meta-label">Author(s):</span> Tadi Sunil Kumar, Yeddu Lakshmi Narayana.<br>
+                        <span class="meta-label">Research Area:</span> Medical Science<br>
+                        <span class="meta-label">Page No:</span> 62-75 | <span class="meta-label">DOI:</span> 10.70558/JCNS.2026.v3.i1.06
+                    </div>
+                    <a href="article6.pdf" class="download-btn">Download PDF</a>
+                </div>
+
+            </section>
+    <aside>
+                <div class="sidebar-card">
+                    <div class="call-title">Call for Articles</div>
+                    <div class="call-month">March - 2026</div>
+                    <p>Submission Last Date<br><strong>30/03/2026</strong></p>
+                    <p style="color: #0000ff;">Acceptance Notification In<br><strong>10 Days</strong></p>
+                    <p style="color: #0000ff;">Published In<br><strong>15 Days</strong></p>
+                </div>
+
+                <div class="sidebar-card">
+                    <div class="author-desk-title">Author's Desk</div>
+                    <ul class="sidebar-list">
+                        <li>AIM & SCOPE</li>
+                        <li>AUTHOR GUIDELINES</li>
+                        <li>JOIN AS REVIEWER</li>
+                        <li>PEER REVIEW PROCESS</li>
+                        <li>PUBLICATION ETHICS</li>
+                        <li>PLAGIARISM POLICY</li>
+                        <li>INDEXING</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+<footer>
+        <div class="container footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Copyright Form</a></li>
+                    <li><a href="#">Check Paper Status</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Government College Women University Faisalabad,</p>
+                <p>Email: fcns.journal@gcwuf.edu.pk</p>
+            </div>
+        </div>
+        <div class="container" align="center">
+      <div class="copyright">
+        Designed by <strong><span>Fayqa Manan</span></strong>.
+      </div>
+
+    </div>
+    </footer>
+</body>
+</html>
