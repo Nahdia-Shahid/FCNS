@@ -22,12 +22,17 @@
         }
 
         /* Header Layout */
-        .top-bar { background-color: #1b8415; color: white; padding: 10px 0; }
+        .top-bar {
+            background-color: #1b8415;
+            color: white;
+            padding: 10px 0;
+        }
+
         .header-banner-wrapper {
             text-align: center;
             padding: 30px 0;
-            background-image: url('front.png'); 
-            background-size: cover; 
+            background-image: url('front.png');
+            background-size: cover;
             background-position: center;
             border-bottom: 1px solid #ddd;
         }
@@ -39,10 +44,22 @@
             margin-bottom: 15px;
         }
 
-        .side-logo { width: 100px; height: auto; }
-        .main-logo { width: 180px; height: auto; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1)); }
+        .side-logo {
+            width: 100px;
+            height: auto;
+        }
 
-        .header-banner-wrapper h1 { color: #0000ff; margin: 10px 0; font-size: 2.2rem; }
+        .main-logo {
+            width: 180px;
+            height: auto;
+            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+        }
+
+        .header-banner-wrapper h1 {
+            color: #0000ff;
+            margin: 10px 0;
+            font-size: 2.2rem;
+        }
 
         .row-three {
             background: radial-gradient(rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
@@ -58,7 +75,12 @@
             padding: 0;
         }
 
-        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 14px; }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
 
         /* Main Grid (Left Content | Right Sidebar) */
         .main-grid {
@@ -75,7 +97,7 @@
             padding: 25px;
             margin-bottom: 25px;
             background: #fff;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
             border-radius: 4px;
         }
 
@@ -88,9 +110,23 @@
             padding-bottom: 8px;
         }
 
-        .info-row { margin-bottom: 8px; display: flex; }
-        .info-label { font-weight: bold; color: #333; width: 150px; flex-shrink: 0; }
-        .info-value { color: #555; flex: 1; line-height: 1.5; }
+        .info-row {
+            margin-bottom: 8px;
+            display: flex;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #333;
+            width: 150px;
+            flex-shrink: 0;
+        }
+
+        .info-value {
+            color: #555;
+            flex: 1;
+            line-height: 1.5;
+        }
 
         .responsibilities-box {
             margin-top: 15px;
@@ -99,8 +135,17 @@
             border: 1px dashed #ccc;
         }
 
-        .responsibilities-box ul { margin: 0; padding-left: 18px; }
-        .responsibilities-box li { margin-bottom: 6px; color: #444; list-style-type: square; font-size: 14px; }
+        .responsibilities-box ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .responsibilities-box li {
+            margin-bottom: 6px;
+            color: #444;
+            list-style-type: square;
+            font-size: 14px;
+        }
 
         /* Sidebar Styles */
         .sidebar-card {
@@ -112,9 +157,19 @@
             background: #fff;
         }
 
-        .call-title { color: #ff0000; font-size: 22px; font-weight: bold; }
-        .call-month { color: #0000ff; font-size: 20px; font-weight: bold; margin-bottom: 10px; }
-        
+        .call-title {
+            color: #ff0000;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .call-month {
+            color: #0000ff;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
         .author-desk-title {
             text-align: left;
             font-size: 22px;
@@ -124,24 +179,41 @@
             font-weight: bold;
         }
 
-        .sidebar-list { text-align: left; list-style: none; padding: 0; }
-        .sidebar-list li { 
-            padding: 10px 0; 
-            border-bottom: 1px solid #eee; 
+        .sidebar-list {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
             font-weight: bold;
             font-size: 13px;
             display: flex;
             align-items: center;
         }
-        .sidebar-list li::before { content: '▶'; color: #1b8415; font-size: 10px; margin-right: 10px; }
 
-        marquee { background: #f1f1f1; padding: 8px 0; font-weight: bold; }
+        .sidebar-list li::before {
+            content: '▶';
+            color: #1b8415;
+            font-size: 10px;
+            margin-right: 10px;
+        }
+
+        marquee {
+            background: #f1f1f1;
+            padding: 8px 0;
+            font-weight: bold;
+        }
 
         @media (max-width: 950px) {
-            .main-grid { grid-template-columns: 1fr; }
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
-    
+
 </head>
 
 <body>
@@ -192,111 +264,84 @@
 
     <main class="content-container">
         <div class="main-grid">
-            
+
             <section>
-                <h2 style="color: #333; margin-top: 0; border-bottom: 2px solid #1b8415; padding-bottom: 10px; display: inline-block;">Editorial Roles & Responsibilities</h2>
+                <h2
+                    style="color: #333; margin-top: 0; border-bottom: 2px solid #1b8415; padding-bottom: 10px; display: inline-block;">
+                    Editorial Board
+                </h2>
 
                 <div class="role-card">
                     <div class="role-header">1. Patron-in-Chief</div>
-                    <div class="info-row"><div class="info-label">Designation:</div><div class="info-value">Vice Chancellor, GCWUF</div></div>
-                    <div class="info-row"><div class="info-label">Overview:</div><div class="info-value">Provides institutional leadership and strategic oversight to ensure sustainability and compliance with national and international academic standards.</div></div>
-                    <div class="responsibilities-box">
-                        <strong>Responsibilities:</strong>
-                        <ul>
-                            <li>Provide overall academic and administrative patronage to the journal.</li>
-                            <li>Endorse the journal’s vision, mission, and strategic direction.</li>
-                            <li>Approve major editorial policies and senior appointments, where required.</li>
-                            <li>Facilitate institutional support and ensure compliance with HEC regulations.</li>
-                            <li>Promote the journal at national and international academic forums.</li>
-                        </ul>
+                    <div class="info-row">
+                        <div class="info-label">Name:</div>
+                        <div class="info-value">Prof. Dr. Kanwal Ameen (T.I)</div>
                     </div>
                 </div>
 
                 <div class="role-card">
                     <div class="role-header">2. Editor-in-Chief</div>
-                    <div class="info-row"><div class="info-label">Designation:</div><div class="info-value">Professor</div></div>
-                    <div class="info-row"><div class="info-label">Overview:</div><div class="info-value">Responsible for maintaining the academic quality, integrity, and credibility of the journal.</div></div>
-                    <div class="responsibilities-box">
-                        <strong>Responsibilities:</strong>
-                        <ul>
-                            <li>Formulate and implement editorial policies in line with HEC, COPE, and international ethical standards.</li>
-                            <li>Ensure a rigorous double-blind peer review process.</li>
-                            <li>Make final decisions on manuscript acceptance or rejection.</li>
-                            <li>Enforce plagiarism, AI usage, and publication ethics policies.</li>
-                            <li>Ensure timely publication as per HEC requirements.</li>
-                            <li>Lead editorial board meetings and evaluate editorial performance.</li>
-                            <li>Represent the journal for indexing, recognition, and academic engagement.</li>
-                            <li>Ensure compliance with HEC recognition and upgradation criteria.</li>
-                        </ul>
+                    <div class="info-row">
+                        <div class="info-label">Name:</div>
+                        <div class="info-value">Prof. Dr. Saima Akram</div>
                     </div>
                 </div>
 
                 <div class="role-card">
-                    <div class="role-header">3. Editors / Associate Editors</div>
-                    <div class="info-row"><div class="info-label">Designation:</div><div class="info-value">Associate Professors</div></div>
-                    <div class="info-row"><div class="info-label">Overview:</div><div class="info-value">Support the Editor-in-Chief in managing scholarly content and peer review.</div></div>
-                    <div class="responsibilities-box">
-                        <strong>Responsibilities:</strong>
-                        <ul>
-                            <li>Manage assigned manuscripts throughout the peer review process.</li>
-                            <li>Identify and communicate with qualified reviewers.</li>
-                            <li>Assess manuscripts for originality, relevance, and technical quality.</li>
-                            <li>Recommend editorial decisions to the Editor-in-Chief.</li>
-                            <li>Ensure timely completion of reviews and revisions.</li>
-                            <li>Contribute to policy development, special issues, and quality assurance.</li>
-                            <li>Promote ethical research and publication practices.</li>
-                        </ul>
+                    <div class="role-header">3. Associate Editors</div>
+                    <div class="info-row">
+                        <div class="info-label">Members:</div>
+                        <div class="info-value">
+                            Dr. Asia Rauf<br>
+                            Dr. Shazia Riaz<br>
+                            Dr. Ifra Noureen
+                        </div>
                     </div>
                 </div>
 
                 <div class="role-card">
-                    <div class="role-header">4. Managing Editor</div>
-                    <div class="info-row"><div class="info-label">Designation:</div><div class="info-value">Associate Professor / Assistant Professor</div></div>
-                    <div class="info-row"><div class="info-label">Overview:</div><div class="info-value">Oversees the operational and administrative management of the journal.</div></div>
-                    <div class="responsibilities-box">
-                        <strong>Responsibilities:</strong>
-                        <ul>
-                            <li>Manage day-to-day editorial and publication operations.</li>
-                            <li>Coordinate communication among authors, reviewers, and editors.</li>
-                            <li>Maintain manuscript records through the journal management system (e.g., OJS).</li>
-                            <li>Ensure timely online publication and issue release.</li>
-                            <li>Maintain plagiarism reports, reviewer databases, and editorial records.</li>
-                            <li>Prepare reports and documentation required by HEC.</li>
-                            <li>Ensure accuracy and regular updates of the journal website.</li>
-                        </ul>
+                    <div class="role-header">4. Managing Editors</div>
+                    <div class="info-row">
+                        <div class="info-label">Members:</div>
+                        <div class="info-value">
+                            Dr. Madeeha Tahir<br>
+                            Ms. Misbah Bashir
+                        </div>
                     </div>
                 </div>
 
                 <div class="role-card">
                     <div class="role-header">5. Editorial Board Members</div>
-                    <div class="info-row"><div class="info-label">Scope:</div><div class="info-value">National & International</div></div>
-                    <div class="info-row"><div class="info-label">Overview:</div><div class="info-value">Support academic quality and outreach of the journal.</div></div>
                     <div class="responsibilities-box">
-                        <strong>Responsibilities:</strong>
                         <ul>
-                            <li>Provide expert peer reviews in relevant subject areas.</li>
-                            <li>Advise on editorial policy, scope, and quality enhancement.</li>
-                            <li>Recommend qualified national and international reviewers.</li>
-                            <li>Suggest themes, special issues, and emerging research areas.</li>
-                            <li>Promote the journal within academic and professional networks.</li>
-                            <li>Uphold confidentiality and ethical standards in the review process.</li>
-                            <li>Participate in editorial meetings and consultations when required.</li>
+                            <li>Prof. Dr. Muhammad Imran Chaudhary</li>
+                            <li>Prof. Dr. Khurram Shabbir</li>
+                            <li>Director, ASSMS</li>
+                            <li>Prof. Dr. Muhammad Sajid (T.I)</li>
+                            <li>Prof. Dr. Hammouch Zakia</li>
+                            <li>Dr. Norma Binti Alias</li>
+                            <li>Dr. Asad Ullah (Associate Professor, Chairman)</li>
+                            <li>Dr. Rani Sumaira Kanwal</li>
+                            <li>Ms. Suneeza Hamid</li>
+                            <li>Ms. Khadija Ali Hussain</li>
+                            <li>Dr. Sadia Sahar</li>
+                            <li>Dr. Farkhanda Afzal</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="role-card">
                     <div class="role-header">6. Advisory Board Members</div>
-                    <div class="info-row"><div class="info-label">Scope:</div><div class="info-value">National & International</div></div>
-                    <div class="info-row"><div class="info-label">Overview:</div><div class="info-value">Provides strategic guidance to strengthen the journal’s academic standing and visibility.</div></div>
                     <div class="responsibilities-box">
-                        <strong>Responsibilities:</strong>
                         <ul>
-                            <li>Advise on long-term academic strategy and quality improvement.</li>
-                            <li>Provide guidance on international best practices and indexing requirements.</li>
-                            <li>Support diversity and international representation on the editorial board.</li>
-                            <li>Recommend improvements in editorial and peer review policies.</li>
-                            <li>Enhance the journal’s national and international reputation.</li>
+                            <li>Prof. Dr. Muhammad Imran Asjad</li>
+                            <li>Prof. Dr. Muhammad Riaz</li>
+                            <li>Prof. Dr. Rafiq Memon</li>
+                            <li>Prof. Dr. Nasir Ali</li>
+                            <li>Prof. Dr. Ali Aukgul</li>
+                            <li>Dr. Tahir Mahmood</li>
+                            <li>Dr. Pakeeza Ashraf</li>
+                            <li>Dr. Shahid Mubeen</li>
                         </ul>
                     </div>
                 </div>
@@ -328,7 +373,7 @@
 
         </div>
     </main>
-<footer>
+    <footer>
         <div class="container footer-content">
             <div class="quick-links">
                 <h3>Quick Links</h3>
@@ -345,11 +390,12 @@
             </div>
         </div>
         <div class="container" align="center">
-      <div class="copyright">
-        Designed by <strong><span>Fayqa Manan</span></strong>.
-      </div>
+            <div class="copyright">
+                Designed by <strong><span>Fayqa Manan</span></strong>.
+            </div>
 
-    </div>
+        </div>
     </footer>
 </body>
+
 </html>
