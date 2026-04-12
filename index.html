@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Journal of Computing and Numerical Sciences</title>
     <link rel="stylesheet" href="style.css">
-    
-</head>
-<style>
+    <style>
         body {
             background-color: #fcfcfc;
             font-family: 'Roboto', sans-serif;
@@ -31,33 +29,50 @@
         }
 
         .header-banner-wrapper {
+            position: relative;
             text-align: center;
-            padding: 30px 0;
-            background-image: url('front.png');
+            height: 350px;
+            /* Fixed height for banner */
+            border-bottom: 1px solid #ddd;
+            overflow: hidden;
+        }
+
+        /* Banner slider images */
+        .banner-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background-size: cover;
             background-position: center;
-            border-bottom: 1px solid #ddd;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
         }
 
-        .logo-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
+        .banner-slide.active {
+            opacity: 1;
         }
 
-        .side-logo {
+        /* Logos and text on top of banner */
+        .banner-content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+        }
+
+        .banner-content img.side-logo {
             width: 100px;
             height: auto;
         }
 
-        .main-logo {
+        .banner-content img.main-logo {
             width: 180px;
             height: auto;
             filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
         }
 
-        .header-banner-wrapper h1 {
+        .banner-content h1 {
             color: #0000ff;
             margin: 10px 0;
             font-size: 2.2rem;
@@ -209,35 +224,103 @@
             font-weight: bold;
         }
 
+        .vc-message {
+            background: #f5f5f5;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .vc-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        /* Image Section */
+        .vc-image {
+            width: 250px;
+            text-align: center;
+        }
+
+        .vc-image img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .vc-image h4 {
+            margin: 10px 0 5px;
+            font-size: 16px;
+        }
+
+        .vc-image p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Content Section */
+        .vc-content {
+            flex: 1;
+        }
+
+        .vc-content h2 {
+            border-bottom: 2px solid #1e3a8a;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .vc-content p {
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .vc-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .vc-image {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .vc-content {
+                text-align: center;
+            }
+        }
+
         @media (max-width: 950px) {
             .main-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
-
+</head>
 
 <body>
 
     <header>
-        <div class="top-bar">
-            <div class="container top-bar-content">
-                <div>Email us: fcns.journal@gcwuf.edu.pk</div>
-                <nav>
-                    <ul>
-                        <li><a href="about.html" style="color: white;">About Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
 
-        <div class="header-banner">
-            <div class="container">
-                <img src="uni.png" alt="GCWUF" height="150px" align="left">
-                <img src="journal.png" alt="Journal FCNS" height="250px">
-                <img src="logo.png" alt="Logo" height="150px" align="right" >
+        <!-- Banner Slider -->
+        <div class="header-banner-wrapper">
+            <div class="banner-slide" style="background-image: url('image1.png');"></div>
+            <div class="banner-slide" style="background-image: url('image2.png');"></div>
+            <div class="banner-slide" style="background-image: url('image3.png');"></div>
+            <div class="banner-slide" style="background-image: url('image4.png');"></div>
+
+            <!-- Content over slider -->
+            <div class="banner-content">
+                <div class="logo-row">
+                    <img src="uni.png" alt="GCWUF" class="side-logo" align="left">
+                    <img src="journal.png" alt="Journal FCNS" class="main-logo">
+                    <img src="logo.png" alt="Logo" class="side-logo" align="right">
+                </div>
                 <h1>Journal of Computing and Numerical Sciences</h1>
-                <p>An National Peer-Reviewed & Refereed Biannual Journal</p>
+                <p>A National Peer-Reviewed Journal</p>
                 <h3>ISSN: <span style="color: #339966;">0000-1111</span></h3>
             </div>
         </div>
@@ -253,6 +336,7 @@
                         <li><a href="archive.html">Archive Issues</a></li>
                         <li><a href="publication.html">Publication Fees (APC)</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -271,12 +355,83 @@
                     <h3 style="color: #000;">DOI: 00.00000/FCNS | Impact Factor: 0.000 | ISSN: 0000-1111</h3>
 
                     <p><strong>Faculty of Computing and Numerical Science (FCNS)</strong> is an nationally
-                        peer-reviewed and indexed, Open Access journal that aims to disseminate scientific information to the
-                        national community through the publication of research articles, review papers, research notes, and
+                        peer-reviewed and indexed, Open Access journal that aims to disseminate scientific information
+                        to the
+                        national community through the publication of research articles, review papers, research notes,
+                        and
                         communications in all subfields of Science and Technology.</p>
-
-                    
                 </div>
+                <section class="vc-message">
+                    <div class="vc-container">
+
+                        <!-- Image Side -->
+                        <div class="vc-image">
+                            <img src="img.jpeg" alt="Vice Chancellor">
+                            <h4>Prof. Dr. Kanwal Ameen (T.I)</h4>
+                            <p>Vice Chancellor</p>
+                        </div>
+
+                        <!-- Text Side -->
+                        <div class="vc-content">
+                            <h2>Vice Chancellor's Message</h2>
+                            <p>
+                                I am humbled and honored to serve as the Vice Chancellor of this prestigious university.
+                                I am fully committed to promoting a culture of tolerance, diversity, and inclusivity
+                                across our campus.
+                                My team and I are dedicated to providing high-quality education that nurtures academic
+                                excellence,
+                                fosters personal growth, and instills a profound sense of social responsibility.
+                            </p>
+
+                            <p>
+                                Our mission is to empower young women by offering a supportive and inclusive environment
+                                that encourages
+                                critical thinking, creativity, and leadership. Through innovative research, active
+                                community engagement,
+                                and a holistic approach to development, we strive to prepare our graduates with the
+                                integrity and skills
+                                needed to make meaningful contributions to society.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+                <br><br>
+                <section class="vc-message">
+                    <div class="vc-container">
+                        <!-- Image Side -->
+                        <div class="vc-image">
+                            <img src="img2.jpeg" alt="Coordinator">
+                            <h4>PROF. DR. SAIMA AKRAM</h4>
+                            <p>Professor,Mathematics
+                                Chairparson</p>
+                        </div>
+
+                        <!-- Text Side -->
+                        <div class="vc-content">
+                            <h2>Coordinator's Message</h2>
+                            <p>
+                                I am honored to serve as the Coordinator of this esteemed institution. I am committed to
+                                fostering a culture of inclusivity, respect, and collaboration across our academic
+                                community. Our goal is to create an environment where every student feels supported and
+                                encouraged to achieve their full potential.
+                            </p>
+
+                            <p>
+                                We strive to deliver quality education that promotes academic excellence, personal
+                                development, and a strong sense of responsibility. Through continuous guidance,
+                                innovative learning approaches, and active engagement, we aim to nurture critical
+                                thinking, creativity, and leadership skills among our students.
+                            </p>
+                            <p>
+                                Together, we are dedicated to shaping individuals who are not only successful in their
+                                fields but also capable of making meaningful contributions to society and contributing
+                                toward a better and more sustainable future.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
             </section>
 
             <aside class="secondary-sidebar">
@@ -285,8 +440,8 @@
                     <p>February 2026</p>
                     <p><strong>Last Date:</strong> 25/02/2026</p>
                 </div>
-                <div class="quick-links">
-                    <h3 style="color: #1a1dd4; text-align: left;">Author's Desk</h3>
+                <div class="sidebar-card">
+                    <div class="author-desk-title">Author's Desk</div>
                     <ul class="sidebar-list">
                         <li>AIM & SCOPE</li>
                         <li><a href="authors.html">AUTHOR GUIDELINES</a></li>
@@ -300,23 +455,7 @@
             </aside>
         </div>
     </main>
-<!-- Interactive Message Boxes Start -->
-<div style="max-width: 1200px; margin: 30px auto; padding: 20px; background-color: #cce5ff; border-left: 6px solid #004085; color: #004085; font-size: 16px; border-radius: 6px;">
-    <strong>Message 1:</strong> Welcome to the FCNS Journal! Share your thoughts or feedback below.
-    <div style="margin-top: 15px;">
-        <textarea placeholder="Write your comment..." style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 14px;"></textarea>
-        <button style="margin-top: 10px; background-color: #004085; color: white; padding: 8px 15px; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
-    </div>
-</div>
 
-<div style="max-width: 1200px; margin: 20px auto; padding: 20px; background-color: #f8d7da; border-left: 6px solid #721c24; color: #721c24; font-size: 16px; border-radius: 6px;">
-    <strong>Message 2:</strong> Remember to submit your manuscripts before the deadline. Leave any questions or remarks below.
-    <div style="margin-top: 15px;">
-        <textarea placeholder="Write your comment..." style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 14px;"></textarea>
-        <button style="margin-top: 10px; background-color: #721c24; color: white; padding: 8px 15px; border: none; border-radius: 4px; cursor: pointer;">Submit</button>
-    </div>
-</div>
-<!-- Interactive Message Boxes End -->
     <footer>
         <div class="container footer-content">
             <div class="quick-links">
@@ -333,13 +472,33 @@
                 <p>Email: fcns.journal@gcwuf.edu.pk</p>
             </div>
         </div>
-        <div class="container" align="center" >
-      <div class="copyright">
-        Designed by <strong><span>Fayqa Manan</span></strong>.
-      </div>
-
-    </div>
+        <div class="container" align="center">
+            <div class="copyright">
+                Designed by <strong><span>Fayqa Manan</span></strong>.
+            </div>
+        </div>
     </footer>
 
+    <!-- Banner Slider JS -->
+    <script>
+        const slides = document.querySelectorAll('.banner-slide');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) slide.classList.add('active');
+            });
+        }
+
+        showSlide(currentIndex);
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }, 5000); // 5 seconds
+    </script>
+
 </body>
+
 </html>

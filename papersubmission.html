@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paper Submission</title>
     <link rel="stylesheet" href="style.css">
-     <style>
+    <style>
         body {
             background-color: #f8f9fa;
             font-family: 'Roboto', sans-serif;
@@ -21,12 +22,17 @@
         }
 
         /* Header Section */
-        .top-bar { background-color: #1b8415; color: white; padding: 10px 0; }
+        .top-bar {
+            background-color: #1b8415;
+            color: white;
+            padding: 10px 0;
+        }
+
         .header-banner-wrapper {
             text-align: center;
             padding: 30px 0;
-            background-image: url('front.png'); 
-            background-size: cover; 
+            background-image: url('front.png');
+            background-size: cover;
             background-position: center;
             border-bottom: 1px solid #ddd;
         }
@@ -38,10 +44,22 @@
             margin-bottom: 15px;
         }
 
-        .side-logo { width: 100px; height: auto; }
-        .main-logo { width: 180px; height: auto; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1)); }
+        .side-logo {
+            width: 100px;
+            height: auto;
+        }
 
-        .header-banner-wrapper h1 { color: #0000ff; margin: 10px 0; font-size: 2.2rem; }
+        .main-logo {
+            width: 180px;
+            height: auto;
+            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+        }
+
+        .header-banner-wrapper h1 {
+            color: #0000ff;
+            margin: 10px 0;
+            font-size: 2.2rem;
+        }
 
         .row-three {
             background: radial-gradient(rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
@@ -49,7 +67,13 @@
             text-align: center;
         }
 
-        nav a { color: white; text-decoration: none; font-weight: bold; margin: 0 10px; font-size: 14px; }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 14px;
+        }
 
         /* Main Grid Layout */
         .submission-grid {
@@ -65,7 +89,7 @@
             background: #fff;
             padding: 30px;
             border-radius: 4px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
             border-top: 5px solid #1b8415;
         }
 
@@ -78,9 +102,20 @@
             margin: 30px 0 20px 0;
         }
 
-        .form-group { margin-bottom: 20px; }
-        .form-group label { display: block; font-weight: bold; margin-bottom: 8px; color: #444; }
-        .form-group input, .form-group select, .form-group textarea {
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #444;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
             width: 100%;
             padding: 12px;
             border: 1px solid #ddd;
@@ -103,10 +138,13 @@
             font-weight: bold;
         }
 
-        .add-btn:hover { background: #f0f0f0; }
+        .add-btn:hover {
+            background: #f0f0f0;
+        }
 
         .submit-btn {
-            background: #1b8415; /* Matching Green from Image */
+            background: #1b8415;
+            /* Matching Green from Image */
             color: white;
             padding: 12px 40px;
             border: none;
@@ -117,7 +155,11 @@
             margin-top: 20px;
         }
 
-        .file-info { font-size: 13px; color: #666; margin-top: 5px; }
+        .file-info {
+            font-size: 13px;
+            color: #666;
+            margin-top: 5px;
+        }
 
         /* Sidebar Styling */
         .sidebar-widget {
@@ -129,9 +171,23 @@
             text-align: center;
         }
 
-        .call-title { color: #ff0000; font-size: 24px; font-weight: bold; }
-        .call-month { color: #0000ff; font-size: 22px; font-weight: bold; }
-        .date-text { color: #0000ff; font-weight: bold; font-size: 18px; }
+        .call-title {
+            color: #ff0000;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .call-month {
+            color: #0000ff;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .date-text {
+            color: #0000ff;
+            font-weight: bold;
+            font-size: 18px;
+        }
 
         .author-desk-title {
             text-align: left;
@@ -142,40 +198,53 @@
             margin-bottom: 15px;
         }
 
-        .sidebar-list { text-align: left; list-style: none; padding: 0; }
-        .sidebar-list li { 
-            padding: 12px 0; 
-            border-bottom: 1px solid #eee; 
+        .sidebar-list {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
             font-weight: bold;
             display: flex;
             align-items: center;
             font-size: 14px;
         }
-        .sidebar-list li::before { content: '▶'; color: #1b8415; font-size: 10px; margin-right: 12px; }
 
-        marquee { background: #f1f1f1; padding: 10px 0; font-weight: bold; }
+        .sidebar-list li::before {
+            content: '▶';
+            color: #1b8415;
+            font-size: 10px;
+            margin-right: 12px;
+        }
 
-        @media (max-width: 900px) { .submission-grid { grid-template-columns: 1fr; } .co-author-row { flex-direction: column; } }
+        marquee {
+            background: #f1f1f1;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+
+        @media (max-width: 900px) {
+            .submission-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .co-author-row {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <div class="top-bar">
-            <div class="container top-bar-content">
-                <div>Email us: fcns.journal@gcwuf.edu.pk</div>
-                <nav>
-                    <ul>
-                        <li><a href="about.html" style="color: white;">About Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
         <div class="header-banner">
             <div class="container">
                 <img src="uni.png" alt="GCWUF" height="150px" align="left">
                 <img src="journal.png" alt="Journal FCNS" height="250px">
-                <img src="logo.png" alt="Logo" height="150px" align="right" >
+                <img src="logo.png" alt="Logo" height="150px" align="right">
                 <h1>Journal of Computing and Numerical Sciences</h1>
                 <p>An National Peer-Reviewed & Refereed Biannual Journal</p>
                 <h3>ISSN: <span style="color: #339966;">0000-1111</span></h3>
@@ -193,6 +262,7 @@
                         <li><a href="archive.html">Archive Issues</a></li>
                         <li><a href="publication.html">Publication Fees (APC)</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -202,12 +272,12 @@
             Call For Paper - Volume - 3 Issue - 1 (January - March 2026)
         </marquee>
     </header>
-     <main class="content-container">
+    <main class="content-container">
         <div class="submission-grid">
-            
+
             <section class="submission-card">
                 <h2 style="margin-top:0;">Submit Your Manuscript</h2>
-                
+
                 <form>
                     <div class="form-group">
                         <label>Author Name *</label>
@@ -259,7 +329,7 @@
             </section>
 
 
-    <aside>
+            <aside>
                 <div class="sidebar-card">
                     <div class="call-title">Call for Articles</div>
                     <div class="call-month">March - 2026</div>
@@ -284,7 +354,7 @@
 
         </div>
     </main>
-<footer>
+    <footer>
         <div class="container footer-content">
             <div class="quick-links">
                 <h3>Quick Links</h3>
@@ -301,11 +371,14 @@
             </div>
         </div>
         <div class="container" align="center">
-      <div class="copyright">
-        Designed by <strong><span>Fayqa Manan</span></strong>.
-      </div>
+            <div class="copyright">
+                Designed by <strong><span><a
+                            href="https://depart.gcwuf.edu.pk/teaching/computerscience/teacher.php?t=2338"
+                            target="_blank">Fayqa Manan</a></span></strong>.
+            </div>
 
-    </div>
+        </div>
     </footer>
 </body>
+
 </html>

@@ -22,12 +22,17 @@
         }
 
         /* Header Layout */
-        .top-bar { background-color: #1b8415; color: white; padding: 10px 0; }
+        .top-bar {
+            background-color: #1b8415;
+            color: white;
+            padding: 10px 0;
+        }
+
         .header-banner-wrapper {
             text-align: center;
             padding: 30px 0;
-            background-image: url('front.png'); 
-            background-size: cover; 
+            background-image: url('front.png');
+            background-size: cover;
             background-position: center;
             border-bottom: 1px solid #ddd;
         }
@@ -39,10 +44,22 @@
             margin-bottom: 15px;
         }
 
-        .side-logo { width: 100px; height: auto; }
-        .main-logo { width: 180px; height: auto; filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.1)); }
+        .side-logo {
+            width: 100px;
+            height: auto;
+        }
 
-        .header-banner-wrapper h1 { color: #0000ff; margin: 10px 0; font-size: 2.2rem; }
+        .main-logo {
+            width: 180px;
+            height: auto;
+            filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+        }
+
+        .header-banner-wrapper h1 {
+            color: #0000ff;
+            margin: 10px 0;
+            font-size: 2.2rem;
+        }
 
         .row-three {
             background: radial-gradient(rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
@@ -58,7 +75,12 @@
             padding: 0;
         }
 
-        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 14px; }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
 
         /* Main Grid (Left Content | Right Sidebar) */
         .main-grid {
@@ -75,7 +97,7 @@
             padding: 25px;
             margin-bottom: 25px;
             background: #fff;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
             border-radius: 4px;
         }
 
@@ -88,9 +110,23 @@
             padding-bottom: 8px;
         }
 
-        .info-row { margin-bottom: 8px; display: flex; }
-        .info-label { font-weight: bold; color: #333; width: 150px; flex-shrink: 0; }
-        .info-value { color: #555; flex: 1; line-height: 1.5; }
+        .info-row {
+            margin-bottom: 8px;
+            display: flex;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: #333;
+            width: 150px;
+            flex-shrink: 0;
+        }
+
+        .info-value {
+            color: #555;
+            flex: 1;
+            line-height: 1.5;
+        }
 
         .responsibilities-box {
             margin-top: 15px;
@@ -99,8 +135,17 @@
             border: 1px dashed #ccc;
         }
 
-        .responsibilities-box ul { margin: 0; padding-left: 18px; }
-        .responsibilities-box li { margin-bottom: 6px; color: #444; list-style-type: square; font-size: 14px; }
+        .responsibilities-box ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+
+        .responsibilities-box li {
+            margin-bottom: 6px;
+            color: #444;
+            list-style-type: square;
+            font-size: 14px;
+        }
 
         /* Sidebar Styles */
         .sidebar-card {
@@ -112,9 +157,19 @@
             background: #fff;
         }
 
-        .call-title { color: #ff0000; font-size: 22px; font-weight: bold; }
-        .call-month { color: #0000ff; font-size: 20px; font-weight: bold; margin-bottom: 10px; }
-        
+        .call-title {
+            color: #ff0000;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .call-month {
+            color: #0000ff;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
         .author-desk-title {
             text-align: left;
             font-size: 22px;
@@ -124,40 +179,46 @@
             font-weight: bold;
         }
 
-        .sidebar-list { text-align: left; list-style: none; padding: 0; }
-        .sidebar-list li { 
-            padding: 10px 0; 
-            border-bottom: 1px solid #eee; 
+        .sidebar-list {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
             font-weight: bold;
             font-size: 13px;
             display: flex;
             align-items: center;
         }
-        .sidebar-list li::before { content: '▶'; color: #1b8415; font-size: 10px; margin-right: 10px; }
 
-        marquee { background: #f1f1f1; padding: 8px 0; font-weight: bold; }
+        .sidebar-list li::before {
+            content: '▶';
+            color: #1b8415;
+            font-size: 10px;
+            margin-right: 10px;
+        }
+
+        marquee {
+            background: #f1f1f1;
+            padding: 8px 0;
+            font-weight: bold;
+        }
 
         @media (max-width: 950px) {
-            .main-grid { grid-template-columns: 1fr; }
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
-    
+
 </head>
 
 <body>
 
     <header>
-        <div class="top-bar">
-            <div class="container top-bar-content">
-                <div>Email us: fcns.journal@gcwuf.edu.pk</div>
-                <nav>
-                    <ul>
-                        <li><a href="about.html" style="color: white;">About Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
         <div class="header-banner">
             <div class="container">
                 <img src="uni.png" alt="GCWUF" height="150px" align="left">
@@ -180,6 +241,7 @@
                         <li><a href="archive.html">Archive Issues</a></li>
                         <li><a href="publication.html">Publication Fees (APC)</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -192,46 +254,83 @@
 
     <main class="content-container">
         <div class="main-grid">
-            
+
             <section>
-                <section id="about-FCNS" style="max-width: 1100px; margin: auto; padding: 40px 20px; font-family: Arial, sans-serif; line-height: 1.7; color: #333;">
+                <section id="about-FCNS"
+                    style="max-width: 1100px; margin: auto; padding: 40px 20px; font-family: Arial, sans-serif; line-height: 1.7; color: #333;">
 
-    <h2 style="text-align:center; margin-bottom: 25px;">About Us</h2>
+                    <h2 style="text-align:center; margin-bottom: 25px;">About Us</h2>
 
-    <p>
-        Fcaulty of COmputing and Numerical Science (FCNS) promises to be a source of grounded and cutting-edge research mandating dissemination for the scientific and research fraternity across the world, authored by researchers, academicians, scholars, and scientists across the globe. Our promise remains to disseminate cutting edge papers in all areas of the natural sciences and technology, in order to provide scholars with a platform to present their work and access the global knowledge base.
-    </p>
+                    <p>
+                        Fcaulty of COmputing and Numerical Science (FCNS) promises to be a source of grounded and
+                        cutting-edge research mandating dissemination for the scientific and research fraternity across
+                        the world, authored by researchers, academicians, scholars, and scientists across the globe. Our
+                        promise remains to disseminate cutting edge papers in all areas of the natural sciences and
+                        technology, in order to provide scholars with a platform to present their work and access the
+                        global knowledge base.
+                    </p>
 
-    <h3 style="margin-top:30px;">Our Mission and Vision</h3>
-    <p>
-        At FCNS, this is the kind of function it plays so as to provide a platform for the flow of knowledge useful to effect positive change. Our main purpose is to present work, findings, research results and insights of scholars, engineers, technologists, and scientists, so that a unified understanding is achieved that epitomises progress in human knowledge. Our strategic vision is to not only remain a library of scholarly research material, but to also be an agent of change in the manner in which research-gathering and writing contributes to the enhancement of standards of living, business practises, and the welfare of the global village.
-    </p>
+                    <h3 style="margin-top:30px;">Our Mission and Vision</h3>
+                    <p>
+                        At FCNS, this is the kind of function it plays so as to provide a platform for the flow of
+                        knowledge useful to effect positive change. Our main purpose is to present work, findings,
+                        research results and insights of scholars, engineers, technologists, and scientists, so that a
+                        unified understanding is achieved that epitomises progress in human knowledge. Our strategic
+                        vision is to not only remain a library of scholarly research material, but to also be an agent
+                        of change in the manner in which research-gathering and writing contributes to the enhancement
+                        of standards of living, business practises, and the welfare of the global village.
+                    </p>
 
-    <h3 style="margin-top:30px;">Policies for Editors and Editorial Board</h3>
-    <p>
-        We strictly maintain the quality and reliability of the material by having the most prominent members in the editorial board of highly qualified scholars/researchers from recognised universities of different countries. All manuscripts submitted to FCNS for publication are reviewed by subject matter experts to ensure compliance to the journal’s high standards. This ensures that every published article not only bring fresh ideas but it also provides a high level of credible science.
-    </p>
+                    <h3 style="margin-top:30px;">Policies for Editors and Editorial Board</h3>
+                    <p>
+                        We strictly maintain the quality and reliability of the material by having the most prominent
+                        members in the editorial board of highly qualified scholars/researchers from recognised
+                        universities of different countries. All manuscripts submitted to FCNS for publication are
+                        reviewed by subject matter experts to ensure compliance to the journal’s high standards. This
+                        ensures that every published article not only bring fresh ideas but it also provides a high
+                        level of credible science.
+                    </p>
 
-    <h3 style="margin-top:30px;">Ethics and Integrity</h3>
-    <p>
-        The main principles of FCNS include ethical practises. The reputations of our journal, and more importantly, the confidence of the academic community in it, lie in the proper adherence to the principles of research ethicality. We are strict supporters of anti-plagiarism, anti-piracy publications of research work and believe that one must never hide work that belongs to others. This is why our editorial and review policies are developed in a manner that will help to ensure that all the published research reflects these commitments making the environment as fairly balanced and trustworthy as can be desired for scholarly research.
-    </p>
+                    <h3 style="margin-top:30px;">Ethics and Integrity</h3>
+                    <p>
+                        The main principles of FCNS include ethical practises. The reputations of our journal, and more
+                        importantly, the confidence of the academic community in it, lie in the proper adherence to the
+                        principles of research ethicality. We are strict supporters of anti-plagiarism, anti-piracy
+                        publications of research work and believe that one must never hide work that belongs to others.
+                        This is why our editorial and review policies are developed in a manner that will help to ensure
+                        that all the published research reflects these commitments making the environment as fairly
+                        balanced and trustworthy as can be desired for scholarly research.
+                    </p>
 
-    <h3 style="margin-top:30px;">Global Reach and Impact</h3>
-    <p>
-        FCNS is happy to be an international journal that is open to researchers from all corners of the world. We remain fully committed to providing universal access to our articles regardless of users’ location and institutional affiliations, thus promoting fair scholarly practises. It also encourages the flow of knowledge across borders so that researchers of different background can easy access new work and put it to practise in an attempt to address the society needs and advance technological and scientific development in the world.
-    </p>
+                    <h3 style="margin-top:30px;">Global Reach and Impact</h3>
+                    <p>
+                        FCNS is happy to be an international journal that is open to researchers from all corners of the
+                        world. We remain fully committed to providing universal access to our articles regardless of
+                        users’ location and institutional affiliations, thus promoting fair scholarly practises. It also
+                        encourages the flow of knowledge across borders so that researchers of different background can
+                        easy access new work and put it to practise in an attempt to address the society needs and
+                        advance technological and scientific development in the world.
+                    </p>
 
-    <h3 style="margin-top:30px;">Why Publish with FCNS?</h3>
-    <p>
-        Selecting FCNS as your publication partner provides a range of opportunities for you for more readership, visibility, and membership of the academic community. We know that for researchers, publication is not just output but is about establishing an identity, participating in knowledge creation and constructing an academic heritage. When you decide to publish in FCNS you are becoming a part of a community, which appreciates the importance of scientific discoveries and works to ensure your work is heard.
-    </p>
+                    <h3 style="margin-top:30px;">Why Publish with FCNS?</h3>
+                    <p>
+                        Selecting FCNS as your publication partner provides a range of opportunities for you for more
+                        readership, visibility, and membership of the academic community. We know that for researchers,
+                        publication is not just output but is about establishing an identity, participating in knowledge
+                        creation and constructing an academic heritage. When you decide to publish in FCNS you are
+                        becoming a part of a community, which appreciates the importance of scientific discoveries and
+                        works to ensure your work is heard.
+                    </p>
 
-    <p style="margin-top:20px;">
-        At FCNS, we strive to realise the opinion that knowledge expands when it is shared and discussed. We want researchers, students, educators, and members in the industry to become actively involved with us as contributors, reviewers, or even members in the editorial advisory board. Your involvement supports curiosity in scholarly pursuit and embraces a life-long love for learning within our Journal.
-    </p>
+                    <p style="margin-top:20px;">
+                        At FCNS, we strive to realise the opinion that knowledge expands when it is shared and
+                        discussed. We want researchers, students, educators, and members in the industry to become
+                        actively involved with us as contributors, reviewers, or even members in the editorial advisory
+                        board. Your involvement supports curiosity in scholarly pursuit and embraces a life-long love
+                        for learning within our Journal.
+                    </p>
 
-</section>
+                </section>
 
             </section>
 
@@ -260,7 +359,7 @@
 
         </div>
     </main>
-<footer>
+    <footer>
         <div class="container footer-content">
             <div class="quick-links">
                 <h3>Quick Links</h3>
@@ -277,11 +376,14 @@
             </div>
         </div>
         <div class="container" align="center">
-      <div class="copyright">
-        Designed by <strong><span>Fayqa Manan</span></strong>.
-      </div>
+            <div class="copyright">
+                Designed by <strong><span><a
+                            href="https://depart.gcwuf.edu.pk/teaching/computerscience/teacher.php?t=2338"
+                            target="_blank">Fayqa Manan</a></span></strong>.
+            </div>
 
-    </div>
+        </div>
     </footer>
 </body>
+
 </html>

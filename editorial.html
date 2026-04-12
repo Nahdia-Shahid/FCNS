@@ -207,6 +207,19 @@
             font-weight: bold;
         }
 
+        .main-grid {
+            display: flex;
+            gap: 30px;
+        }
+
+        section {
+            flex: 3;
+        }
+
+        aside {
+            flex: 1;
+        }
+
         @media (max-width: 950px) {
             .main-grid {
                 grid-template-columns: 1fr;
@@ -219,16 +232,6 @@
 <body>
 
     <header>
-        <div class="top-bar">
-            <div class="container top-bar-content">
-                <div>Email us: fcns.journal@gcwuf.edu.pk</div>
-                <nav>
-                    <ul>
-                        <li><a href="about.html" style="color: white;">About Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
 
         <div class="header-banner">
             <div class="container">
@@ -252,6 +255,7 @@
                         <li><a href="archive.html">Archive Issues</a></li>
                         <li><a href="publication.html">Publication Fees (APC)</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -275,7 +279,9 @@
                     <div class="role-header">1. Patron-in-Chief</div>
                     <div class="info-row">
                         <div class="info-label">Name:</div>
-                        <div class="info-value">Prof. Dr. Kanwal Ameen (T.I)</div>
+                        <div class="info-value"><a
+                                href="https://depart.gcwuf.edu.pk/non_teaching/Vice_chancellor_office/"> Prof. Dr.
+                                Kanwal Ameen (T.I)</a></div>
                     </div>
                 </div>
 
@@ -283,7 +289,9 @@
                     <div class="role-header">2. Editor-in-Chief</div>
                     <div class="info-row">
                         <div class="info-label">Name:</div>
-                        <div class="info-value">Prof. Dr. Saima Akram</div>
+                        <div class="info-value"><a
+                                href="https://depart.gcwuf.edu.pk/teaching/mathematics/teacher.php?t=2317"> Prof. Dr.
+                                Saima Akram</a></div>
                     </div>
                 </div>
 
@@ -292,9 +300,12 @@
                     <div class="info-row">
                         <div class="info-label">Members:</div>
                         <div class="info-value">
-                            Dr. Asia Rauf<br>
-                            Dr. Shazia Riaz<br>
-                            Dr. Ifra Noureen
+                            <a href="https://depart.gcwuf.edu.pk/teaching/mathematics/teacher.php?t=1083"> Dr. Asia
+                                Rauf</a><br>
+                            <a href="https://depart.gcwuf.edu.pk/teaching/computerscience/teacher.php?t=1642"> Dr.
+                                Shazia Riaz</a><br>
+                            <a href="https://depart.gcwuf.edu.pk/teaching/mathematics/teacher.php?t=2315"> Dr. Ifra
+                                Noureen</a>
                         </div>
                     </div>
                 </div>
@@ -304,7 +315,8 @@
                     <div class="info-row">
                         <div class="info-label">Members:</div>
                         <div class="info-value">
-                            Dr. Madeeha Tahir<br>
+                            <a href="https://depart.gcwuf.edu.pk/teaching/mathematics/teacher.php?t=1812"> Dr. Madeeha
+                                Tahir</a><br>
                             Ms. Misbah Bashir
                         </div>
                     </div>
@@ -312,66 +324,65 @@
 
                 <div class="role-card">
                     <div class="role-header">5. Editorial Board Members</div>
-                    <div class="responsibilities-box">
-                        <ul>
-                            <li>Prof. Dr. Muhammad Imran Chaudhary</li>
-                            <li>Prof. Dr. Khurram Shabbir</li>
-                            <li>Director, ASSMS</li>
-                            <li>Prof. Dr. Muhammad Sajid (T.I)</li>
-                            <li>Prof. Dr. Hammouch Zakia</li>
-                            <li>Dr. Norma Binti Alias</li>
-                            <li>Dr. Asad Ullah (Associate Professor, Chairman)</li>
-                            <li>Dr. Rani Sumaira Kanwal</li>
-                            <li>Ms. Suneeza Hamid</li>
-                            <li>Ms. Khadija Ali Hussain</li>
-                            <li>Dr. Sadia Sahar</li>
-                            <li>Dr. Farkhanda Afzal</li>
-                        </ul>
-                    </div>
+                    <!-- <div class="responsibilities-box"> -->
+                    <ul>
+                        <li>Prof. Dr. Muhammad Imran Chaudhary</li>
+                        <li>Prof. Dr. Khurram Shabbir</li>
+                        <li>Director, ASSMS</li>
+                        <li>Prof. Dr. Muhammad Sajid (T.I)</li>
+                        <li>Prof. Dr. Hammouch Zakia</li>
+                        <li>Dr. Norma Binti Alias</li>
+                        <li>Dr. Asad Ullah (Associate Professor, Chairman)</li>
+                        <li><a href="https://depart.gcwuf.edu.pk/teaching/mathematics/teacher.php?t=2313"> Dr. Rani
+                                Sumaira Kanwal</a></li>
+                        <li><a href="https://depart.gcwuf.edu.pk/teaching/informationtechnology/teacher.php?t=1010"> Ms.
+                                Suneeza Hamid</a></li>
+                        <li>Ms. Khadija Ali Hussain</li>
+                        <li><a href="https://depart.gcwuf.edu.pk/teaching/computerscience/teacher.php?t=1649"> Dr. Sadia
+                                Sahar</a></li>
+                        <li>Dr. Farkhanda Afzal</li>
+                    </ul>
                 </div>
 
                 <div class="role-card">
                     <div class="role-header">6. Advisory Board Members</div>
-                    <div class="responsibilities-box">
-                        <ul>
-                            <li>Prof. Dr. Muhammad Imran Asjad</li>
-                            <li>Prof. Dr. Muhammad Riaz</li>
-                            <li>Prof. Dr. Rafiq Memon</li>
-                            <li>Prof. Dr. Nasir Ali</li>
-                            <li>Prof. Dr. Ali Aukgul</li>
-                            <li>Dr. Tahir Mahmood</li>
-                            <li>Dr. Pakeeza Ashraf</li>
-                            <li>Dr. Shahid Mubeen</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </section>
-
-            <aside>
-                <div class="sidebar-card">
-                    <div class="call-title">Call for Articles</div>
-                    <div class="call-month">March - 2026</div>
-                    <p>Submission Last Date<br><strong>30/03/2026</strong></p>
-                    <p style="color: #0000ff;">Acceptance Notification In<br><strong>10 Days</strong></p>
-                    <p style="color: #0000ff;">Published In<br><strong>15 Days</strong></p>
-                </div>
-
-                <div class="sidebar-card">
-                    <div class="author-desk-title">Author's Desk</div>
-                    <ul class="sidebar-list">
-                        <li>AIM & SCOPE</li>
-                        <li><a href="authors.html">AUTHOR GUIDELINES</a></li>
-                        <li>JOIN AS REVIEWER</li>
-                        <li>PEER REVIEW PROCESS</li>
-                        <li>PUBLICATION ETHICS</li>
-                        <li><a href="plag.html">PLAGIARISM POLICY</a></li>
-                        <li>INDEXING</li>
+                    <!-- <div class="responsibilities-box"> -->
+                    <ul>
+                        <li>Prof. Dr. Muhammad Imran Asjad</li>
+                        <li>Prof. Dr. Muhammad Riaz</li>
+                        <li>Prof. Dr. Rafiq Memon</li>
+                        <li>Prof. Dr. Nasir Ali</li>
+                        <li>Prof. Dr. Ali Aukgul</li>
+                        <li>Dr. Tahir Mahmood</li>
+                        <li>Dr. Pakeeza Ashraf</li>
+                        <li>Dr. Shahid Mubeen</li>
                     </ul>
                 </div>
-            </aside>
+        </section>
 
-        </div>
+        <aside>
+            <div class="sidebar-card">
+                <div class="call-title">Call for Articles</div>
+                <div class="call-month">March - 2026</div>
+                <p>Submission Last Date<br><strong>30/03/2026</strong></p>
+                <p style="color: #0000ff;">Acceptance Notification In<br><strong>10 Days</strong></p>
+                <p style="color: #0000ff;">Published In<br><strong>15 Days</strong></p>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="author-desk-title">Author's Desk</div>
+                <ul class="sidebar-list">
+                    <li>AIM & SCOPE</li>
+                    <li><a href="authors.html">AUTHOR GUIDELINES</a></li>
+                    <li>JOIN AS REVIEWER</li>
+                    <li>PEER REVIEW PROCESS</li>
+                    <li>PUBLICATION ETHICS</li>
+                    <li><a href="plag.html">PLAGIARISM POLICY</a></li>
+                    <li>INDEXING</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
     </main>
     <footer>
         <div class="container footer-content">
@@ -391,7 +402,9 @@
         </div>
         <div class="container" align="center">
             <div class="copyright">
-                Designed by <strong><span>Fayqa Manan</span></strong>.
+                Designed by <strong><span><a
+                            href="https://depart.gcwuf.edu.pk/teaching/computerscience/teacher.php?t=2338"
+                            target="_blank">Fayqa Manan</a></span></strong>.
             </div>
 
         </div>

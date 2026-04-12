@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,23 +22,40 @@
         }
 
         /* Top Bar & Banner */
-        .top-bar { background-color: #1b8415; color: white; padding: 10px 0; }
+        .top-bar {
+            background-color: #1b8415;
+            color: white;
+            padding: 10px 0;
+        }
+
         .header-banner-wrapper {
             text-align: center;
             padding: 30px 0;
-            background-image: url('front.png'); 
-            background-size: cover; 
+            background-image: url('front.png');
+            background-size: cover;
             background-position: center;
             border-bottom: 1px solid #ddd;
         }
-        .header-banner-wrapper h1 { color: #0000ff; margin: 10px 0; font-size: 2.2rem; }
-        
+
+        .header-banner-wrapper h1 {
+            color: #0000ff;
+            margin: 10px 0;
+            font-size: 2.2rem;
+        }
+
         .row-three {
             background: radial-gradient(rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
             padding: 12px 0;
             text-align: center;
         }
-        nav a { color: white; text-decoration: none; font-weight: bold; margin: 0 10px; font-size: 14px; }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            font-size: 14px;
+        }
 
         /* Main Grid */
         .main-grid {
@@ -52,7 +70,7 @@
             background: #fff;
             padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
             border-top: 5px solid #1b8415;
         }
 
@@ -66,16 +84,24 @@
             background: #ffffff;
         }
 
-        .calc-header { color: #0000ff; font-weight: bold; font-size: 22px; margin-bottom: 20px; }
-        .calc-row { margin-bottom: 15px; }
-        
+        .calc-header {
+            color: #0000ff;
+            font-weight: bold;
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .calc-row {
+            margin-bottom: 15px;
+        }
+
         .counter-input {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 10px;
         }
-        
+
         .btn-circle {
             background: #27272a;
             color: white;
@@ -114,12 +140,38 @@
         }
 
         /* Payment Details (Image 8 & 9) */
-        .payment-method { text-align: center; margin-top: 40px; border-top: 2px solid #eee; padding-top: 30px; }
-        .upi-text { color: #1b8415; font-weight: bold; font-size: 20px; margin: 15px 0; }
-        .qr-btn { background: #1b8415; color: white; border: none; padding: 10px 20px; border-radius: 4px; font-weight: bold; cursor: pointer; }
+        .payment-method {
+            text-align: center;
+            margin-top: 40px;
+            border-top: 2px solid #eee;
+            padding-top: 30px;
+        }
 
-        .bank-details { margin-top: 40px; text-align: center; padding: 20px; background: #fdfdfd; border-radius: 8px; }
-        
+        .upi-text {
+            color: #1b8415;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .qr-btn {
+            background: #1b8415;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .bank-details {
+            margin-top: 40px;
+            text-align: center;
+            padding: 20px;
+            background: #fdfdfd;
+            border-radius: 8px;
+        }
+
         /* Sidebar (Image 3 style) */
         .sidebar-widget {
             background: #fff;
@@ -130,39 +182,55 @@
             text-align: center;
         }
 
-        .call-title { color: #ff0000; font-size: 24px; font-weight: bold; }
-        .call-month { color: #0000ff; font-size: 22px; font-weight: bold; }
-        .sidebar-list { text-align: left; list-style: none; padding: 0; }
-        .sidebar-list li { 
-            padding: 10px 0; 
-            border-bottom: 1px solid #eee; 
+        .call-title {
+            color: #ff0000;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .call-month {
+            color: #0000ff;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .sidebar-list {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
             font-weight: bold;
             display: flex;
             align-items: center;
         }
-        .sidebar-list li::before { content: '▶'; color: #1b8415; font-size: 10px; margin-right: 12px; }
 
-        marquee { background: #f1f1f1; padding: 10px 0; font-weight: bold; display: block; }
+        .sidebar-list li::before {
+            content: '▶';
+            color: #1b8415;
+            font-size: 10px;
+            margin-right: 12px;
+        }
+
+        marquee {
+            background: #f1f1f1;
+            padding: 10px 0;
+            font-weight: bold;
+            display: block;
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <div class="top-bar">
-            <div class="container top-bar-content">
-                <div>Email us: fcns.journal@gcwuf.edu.pk</div>
-                <nav>
-                    <ul>
-                        <li><a href="about.html" style="color: white;">About Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-
         <div class="header-banner">
             <div class="container">
                 <img src="uni.png" alt="GCWUF" height="150px" align="left">
                 <img src="journal.png" alt="Journal FCNS" height="250px">
-                <img src="logo.png" alt="Logo" height="150px" align="right" >
+                <img src="logo.png" alt="Logo" height="150px" align="right">
                 <h1>Journal of Computing and Numerical Sciences</h1>
                 <p>An National Peer-Reviewed & Refereed Biannual Journal</p>
                 <h3>ISSN: <span style="color: #339966;">0000-1111</span></h3>
@@ -180,6 +248,7 @@
                         <li><a href="archive.html">Archive Issues</a></li>
                         <li><a href="publication.html">Publication Fees (APC)</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </nav>
             </div>
@@ -191,13 +260,13 @@
     </header>
     <main class="content-container">
         <div class="main-grid">
-            
+
             <section class="apc-content-card">
                 <h2 style="text-align: center; color: #0000ff;">Article Processing Charge (APC)</h2>
-                
+
                 <div class="calculator-box">
                     <div class="calc-header">APC Calculator</div>
-                    
+
                     <div class="calc-row">
                         <label>Author's Affiliation Type:</label><br>
                         <select id="authorType" style="width: 220px; padding: 10px; margin-top: 10px;">
@@ -250,7 +319,7 @@
                     <p><strong>Swift Code:</strong> PUNBINBBCKH</p>
                 </div>
             </section>
-    <aside>
+            <aside>
                 <div class="sidebar-card">
                     <div class="call-title">Call for Articles</div>
                     <div class="call-month">March - 2026</div>
@@ -310,7 +379,7 @@
             document.getElementById('resultText').innerText = "Total fee: Rs. 10,000";
         }
     </script>
-<footer>
+    <footer>
         <div class="container footer-content">
             <div class="quick-links">
                 <h3>Quick Links</h3>
@@ -327,11 +396,14 @@
             </div>
         </div>
         <div class="container" align="center">
-      <div class="copyright">
-        Designed by <strong><span>Fayqa Manan</span></strong>.
-      </div>
+            <div class="copyright">
+                Designed by <strong><span><a
+                            href="https://depart.gcwuf.edu.pk/teaching/computerscience/teacher.php?t=2338"
+                            target="_blank">Fayqa Manan</a></span></strong>.
+            </div>
 
-    </div>
+        </div>
     </footer>
 </body>
+
 </html>
