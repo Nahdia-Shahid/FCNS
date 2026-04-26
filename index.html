@@ -31,7 +31,7 @@
         .header-banner-wrapper {
             position: relative;
             text-align: center;
-            height: 350px;
+            height: 500px;
             /* Fixed height for banner */
             border-bottom: 1px solid #ddd;
             overflow: hidden;
@@ -62,12 +62,14 @@
         }
 
         .banner-content img.side-logo {
-            width: 100px;
+            margin-left: 100px;
+            margin-right: 100px;
+            width: 150px;
             height: auto;
         }
 
         .banner-content img.main-logo {
-            width: 180px;
+            width: 300px;
             height: auto;
             filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
         }
@@ -98,6 +100,7 @@
             font-weight: bold;
             font-size: 14px;
         }
+
 
         /* Main Grid (Left Content | Right Sidebar) */
         .main-grid {
@@ -313,15 +316,17 @@
             <div class="banner-slide" style="background-image: url('image4.png');"></div>
 
             <!-- Content over slider -->
-            <div class="banner-content">
-                <div class="logo-row">
-                    <img src="uni.png" alt="GCWUF" class="side-logo" align="left">
-                    <img src="journal.png" alt="Journal FCNS" class="main-logo">
-                    <img src="logo.png" alt="Logo" class="side-logo" align="right">
+            <div class="header-banner">
+                <div class="banner-content">
+                    <div class="container">
+                        <img src="uni.png" alt="GCWUF" height="150px" align="left">
+                        <img src="journal.png" alt="Journal FCNS" height="250px">
+                        <img src="logo.png" alt="Logo" height="150px" align="right">
+                        <h1>Journal of Computing and Numerical Sciences</h1>
+                        <p>A National Peer-Reviewed Journal</p>
+                        <h3>ISSN: <span style="color: #339966;">0000-1111</span></h3>
+                    </div>
                 </div>
-                <h1>Journal of Computing and Numerical Sciences</h1>
-                <p>A National Peer-Reviewed Journal</p>
-                <h3>ISSN: <span style="color: #339966;">0000-1111</span></h3>
             </div>
         </div>
 
@@ -435,6 +440,9 @@
             </section>
 
             <aside class="secondary-sidebar">
+                <div >
+                    <img src="title.jpeg" alt="" height="500px" width="400px">
+                </div>
                 <div class="call_for_paper">
                     <h3 style="color: red; margin-top: 0;">Call for Articles</h3>
                     <p>February 2026</p>
@@ -498,7 +506,7 @@
         setInterval(() => {
             currentIndex = (currentIndex + 1) % slides.length;
             showSlide(currentIndex);
-        }, 5000); // 5 seconds
+        }, 3000); // 1 seconds
     </script>
 
 </body>
