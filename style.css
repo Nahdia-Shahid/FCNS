@@ -111,7 +111,7 @@
 
         .call_for_paper {
             text-align: center;
-            border: 2px solid #ff0000;
+            border: 2px solid #3266ac;
             padding: 15px;
             margin-bottom: 20px;
         }
@@ -132,6 +132,7 @@
         .quick-links ul {
             list-style: none;
             padding: 0;
+            color: #ffffff;
         }
 
         .quick-links a {
