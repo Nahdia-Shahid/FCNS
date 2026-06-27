@@ -1,0 +1,206 @@
+/* ==================================
+   RESPONSIVE CSS
+   ================================== */
+
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+/* Images */
+
+img{
+    max-width:100%;
+}
+
+/* Videos */
+
+iframe,
+video{
+    max-width:100%;
+    height:auto;
+}
+
+/* Sidebar Images */
+
+.secondary-sidebar img{
+    max-width:100%;
+    height:auto;
+}
+
+/* Long Text Protection */
+
+p,
+span,
+a,
+li,
+td,
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    overflow-wrap:break-word;
+}
+
+/* ==================================
+   TABLET
+   ================================== */
+
+@media screen and (max-width:992px){
+
+    .main-layout,
+    .main-grid{
+        grid-template-columns:1fr !important;
+    }
+
+    .footer-content{
+        flex-direction:column;
+    }
+
+    .vc-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .secondary-sidebar{
+        margin-top:20px;
+    }
+}
+
+/* ==================================
+   MOBILE
+   ================================== */
+
+@media screen and (max-width:768px){
+
+    /* Banner */
+
+    .header-banner-wrapper{
+        height:auto !important;
+        min-height:650px;
+    }
+
+    .banner-logos{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .banner-logos .side-logo{
+        width:120px;
+    }
+
+    .banner-logos .main-logo{
+        width:180px;
+    }
+
+    .banner-content{
+        padding:15px;
+    }
+
+    .banner-content h1{
+        font-size:1.5rem !important;
+        line-height:1.3;
+        padding:0 10px;
+    }
+
+    /* Navigation */
+
+    nav ul{
+        flex-direction:column !important;
+        align-items:center;
+        gap:12px !important;
+    }
+
+    nav ul li{
+        width:100%;
+        text-align:center;
+    }
+
+    nav a{
+        display:block;
+        padding:6px;
+    }
+
+    /* Layout */
+
+    .main-layout,
+    .main-grid{
+        grid-template-columns:1fr !important;
+    }
+
+    .secondary-sidebar{
+        width:100%;
+        margin-top:20px;
+    }
+
+    .sidebar-card,
+    .call_for_paper{
+        width:100%;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .vc-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .vc-image{
+        width:220px;
+        max-width:100%;
+        margin:auto;
+    }
+
+    .entry-content{
+        padding:20px 0;
+    }
+
+    marquee{
+        font-size:14px;
+    }
+
+    table{
+        display:block;
+        overflow-x:auto;
+        width:100%;
+    }
+}
+
+/* ==================================
+   SMALL DEVICES
+   ================================== */
+
+@media screen and (max-width:480px){
+
+    .container{
+        padding-left:10px !important;
+        padding-right:10px !important;
+    }
+
+    .banner-content h1{
+        font-size:1.3rem !important;
+    }
+
+    h2{
+        font-size:1.4rem;
+    }
+
+    h3{
+        font-size:1.2rem;
+    }
+
+    body{
+        font-size:14px;
+    }
+}
